@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.placessearch.Info">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/infoAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="38dp"
+        android:text="Address"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone"
+        android:layout_marginStart="43dp"
+        android:layout_toEndOf="@+id/phone"
+        android:text="No address found"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/infoAdd"
+        android:layout_below="@+id/infoAdd"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:text="Price Level"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/price"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="20dp"
+        android:text="Rating"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rating"
+        android:layout_below="@+id/rating"
+        android:layout_marginTop="20dp"
+        android:text="Google Page"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/google"
+        android:layout_below="@+id/google"
+        android:layout_marginTop="20dp"
+        android:text="Website"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:id="@+id/phonetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phone"
+        android:layout_above="@+id/price"
+        android:layout_alignStart="@+id/addressText"
+        android:autoLink="phone"
+        android:text="No phone number found"/>
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignStart="@+id/phonetext"
+        android:text="No Price Level Found"
+        />
+
+    <TextView
+        android:id="@+id/pageURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/google"
+        android:layout_alignStart="@+id/ratingBar"
+        android:autoLink="web"
+        android:text="No link found"/>
+
+    <TextView
+        android:id="@+id/webURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/website"
+        android:layout_alignStart="@+id/pageURL"
+        android:autoLink="web"
+        android:text="No website url found"/>
+
+    <RatingBar
+        style="?android:attr/ratingBarStyleSmall"
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/priceText"
+        android:layout_alignTop="@+id/rating" />
+
+</RelativeLayout>

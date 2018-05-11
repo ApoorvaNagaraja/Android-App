@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.placessearch.Maps">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="9dp"
+        android:text="From" />
+
+    <AutoCompleteTextView
+        android:id="@+id/from_location"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        android:paddingTop="14dp"
+        android:hint="Type in the location"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_location"
+        android:layout_marginStart="9dp"
+        android:text="Travel Mode"
+        android:id="@+id/travel_mode"/>
+
+
+
+
+    <Spinner
+        android:id="@+id/travelSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/travel_mode"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="9dp"
+        android:entries="@array/travel"
+        android:prompt="@string/travel_default" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="500dp"
+        android:layout_below="@+id/travelSpinner"
+        android:layout_height="310dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+</RelativeLayout>

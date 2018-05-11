@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rev_relativeLayout">
+
+
+    <ImageView
+        android:id="@+id/prodilePic"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" />
+
+
+    <TextView
+        android:id="@+id/rev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/prodilePic"
+        android:layout_toRightOf="@+id/prodilePic"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+       />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rev_name"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/prodilePic" />
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar2"
+        android:layout_toEndOf="@+id/prodilePic"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/datetime"
+        android:layout_below="@+id/datetime"
+        android:layout_marginTop="9dp"
+        android:text="TextView" />
+
+</RelativeLayout>

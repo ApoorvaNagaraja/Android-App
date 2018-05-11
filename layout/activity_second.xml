@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.placessearch.SecondActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1"
+        android:background="#00AA8D"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search results"
+            android:textSize="25dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/toolbar1"
+        android:layout_above="@id/bottom"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+           />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="190dp"
+            android:layout_toRightOf="@+id/prevBtn"
+            android:layout_height="wrap_content"
+            android:text="Next"
+          />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="125dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

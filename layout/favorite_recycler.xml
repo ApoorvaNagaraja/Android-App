@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fav_relativeLayout">
+
+
+    <ImageView
+        android:id="@+id/favIcon"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/fav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/favIcon"
+        android:layout_toRightOf="@+id/favIcon"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/fav_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fav_name"
+        android:layout_toEndOf="@+id/favIcon"
+        android:layout_toRightOf="@+id/favIcon"
+        android:text="TextView"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <ImageView
+        android:id="@+id/fav_Favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:tag="bg"
+        android:src="@drawable/heart_red"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nofav1"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
